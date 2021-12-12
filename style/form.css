@@ -1,0 +1,136 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+}
+
+.signupFrm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding:20px 40px;
+    box-shadow: 0 10px rgba(92,99,105,.2);
+
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.inputContainer{
+    position:relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+.input{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-size:16px;
+    padding: 0 20px;
+    outline:none;
+    background:none;
+    z-index: 1;
+}
+.submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: violet;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: pink;
+  }
+  .input:focus {
+    border: 2px solid pink;
+  }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .footer{
+    position: fixed;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    background-color: coral;
+    color: black;
+    text-align: center;
+}
+.header{
+   font-family: fantasy;
+    padding: 0.03%;
+    text-align: right;
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+}
+.button{
+    border:2px black;
+    color:black;
+    padding: 20px 32px;
+    text-align: right;
+    text-decoration:unset;
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    cursor: pointer;
+    background-color: violet;
+    text-align: right;
+}
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: palevioletred;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color:pink;
+}

@@ -1,0 +1,56 @@
+.footer{
+    position: fixed;
+    right:0;
+    bottom: 0;
+    width: 100%;
+    background-color: coral;
+    color: black;
+    text-align: center;
+}
+.header{
+   font-family: fantasy;
+    padding: 0.03%;
+    text-align: right;
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+}
+.button{
+    border:2px black;
+    color:black;
+    padding: 20px 32px;
+    text-align: right;
+    text-decoration:unset;
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    cursor: pointer;
+    background-color: violet;
+    text-align: right;
+}
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: palevioletred;
+  overflow: auto;
+  height: 10%;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color:pink;
+}
