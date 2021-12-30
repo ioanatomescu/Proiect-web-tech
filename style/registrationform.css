@@ -1,0 +1,44 @@
+
+/* The following tag selector body use the font-family and background-color properties for body of a page*/
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+/* Following container class used padding for generate space around it, and also use a background-color for specifying the lightblue color as a background */  
+.container {
+    padding: 50px;
+  background-color: violet;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus {
+  background-color: white;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.button{
+    border:2px magenta;
+    color:black;
+    padding: 20px 32px;
+    text-align: right;
+    text-decoration:unset;
+    display: inline-block;
+    font-size: 16px;
+    margin:4px 2px;
+    cursor: pointer;
+    background-color: pink;
+    text-align: right;
+}
