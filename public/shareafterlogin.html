@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/menu.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'receiver@email_address.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+        Attachments: [
+          {
+            name: "File_Name_with_Extension",
+            path: "Full Path of the file"
+          }]
+      })
+        .then(function (message) {
+          alert("Mail has been sent successfully")
+        });
+    }
+  </script>
+</head>
+<body>
+    <div class="header">
+        <!-- <p>Welcome to your notebook</p> -->
+      
+        
+        <div class="icon-bar">
+        <!-- <a class="active" href="#"><i class="fa fa-home"></i></a>  -->
+        <a href="index.afterlogin.html"><i class="fa fa-home">Home</i></a>
+        <a href="envelopeafterlogin2.html"><i class="fa fa-note"> Notes</i></a> 
+       
+        <a href="shareafterlogin.html"><i class="fa fa-share">Share</i></a> 
+        <a href="index.html"><i class="fa fa-envelope">Chat</i></a>
+     </div>
+    </div>
+   
+    <!-- <div style="text-align: right;">
+    <img  src="notebook1.jpg" style="width: 50%;"/>
+    
+ </div>   -->
+ <!-- <form method="post">
+    <input type="button" value="Send Mail"
+        onclick="sendMail()" />
+  </form> -->
+  <!-- <h2>Add React in One Minute</h2>
+    <p>This page demonstrates using React with no build tooling.</p>
+    <p>React is loaded as a script tag.</p> -->
+
+    <!-- We will put our React component inside this div. -->
+    <h1 style="text-align: center;">Here you can share any file you want from your computer to your colegues</h1>
+    <h3 style="color: coral; padding-right: 5cm; padding-left: 5cm;">We know that these days, with online school is really hard to keep up with all of the courses and the seminars at your faculty.But here we created a special functionality in order to help you.You can share with your collegues any type of documents and they as well. It is more efficient to study with somebody else , then to do all the things all by your side.Maybe you don't understand somethng at a specific subject, so your collegues can help you any time.Also if you want to make a group chat , we added this functionality too, to our website <a href="chatafterlogin.html">here</a></h3>
+    <h3 style="color: coral; padding-right: 5cm; padding-left: 5cm;">Now to be more clear, you will upload your files here, and all of your collegues can see them. But be specific if you want some help to understand something or you figured out how to resolve an exercise and you want to help them too!</h3>
+    <h1 style="text-align: center;">Here you can upload your files:</h1>
+    <form style="text-align: center;" method="POST" action="/" enctype="multipart/form-data">
+      <input style="align-items: center;" type="file" name="file">
+      <input type="submit" value="Upload"/>
+    </form>
+    <h2 style="text-align: center;">Did you like this functionality?</h2>
+    <div id="like_button_container" style="text-align: center;"></div>
+    <div style="text-align: center;">
+      <img  src="notebook1.jpg" style="width: 50%;"/>
+      
+   </div>  
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="share.js"></script>
+    
+</body>
+</html>

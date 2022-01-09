@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/menu.css">
+<link rel="stylesheet" type="text/css" href="style/notes.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Text Editor</title>
+<!--Bootstrap Cdn -->
+<link rel="stylesheet" 
+      href=
+"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+      integrity=
+"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+      crossorigin="anonymous">
+<!-- fontawesome cdn For Icons -->
+<!-- <link rel="stylesheet"
+      href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+      integrity=
+"sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+      crossorigin="anonymous" />
+<link rel="stylesheet"
+      href=
+"https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+      integrity=
+"sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous" /> -->
+
+<!--Internal CSS start-->
+
+<!--Internal CSS End-->
+<script src="scripts/notes.js"></script>
+
+<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+<script language="javascript" type="text/javascript" src="libraries/p5.js.dom.js"></script>
+</head>
+<body>
+    <div class="header">
+        <!-- <p>Welcome to your notebook</p> -->
+      
+        
+        <div class="icon-bar">
+        <!-- <a class="active" href="#"><i class="fa fa-home"></i></a>  -->
+        <a href="index.afterlogin.html"><i class="fa fa-home">Home</i></a>
+        <a href="envelopeafterlogin2.html"><i class="fa fa-note"> Notes</i></a> 
+        
+        <a href="shareafterlogin.html"><i class="fa fa-share">Share</i></a> 
+        <a href="index.html"><i class="fa fa-envelope">Chat</i></a>
+     </div>
+    </div>
+    <section class="">
+        
+        <h1 class="shadow-sm">Courses notes</h1>
+       
+        <div class="flex-box">
+           
+            <div class="row">
+               
+                <div class="col">
+                    
+                    <!-- Adding different buttons for
+                         different functionality-->
+                    <!--onclick attribute is added to give 
+                        button a work to do when it is clicked-->
+                    <button type="button" 
+                            onclick="f1()" 
+                            class=" shadow-sm btn btn-outline-secondary" 
+                            data-toggle="tooltip"
+                            data-placement="top" 
+                            title="Bold Text">
+            Bold</button>
+                    <button type="button" 
+                            onclick="f2()" 
+                            class="shadow-sm btn btn-outline-success" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Italic Text">
+            Italic</button>
+                    <button type="button" 
+                            onclick="f3()" 
+                            class=" shadow-sm btn btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top"
+                            title="Left Align">
+            <i class="fas fa-align-left"></i>Align left</button>
+                    <button type="button" 
+                            onclick="f4()" 
+                            class="btn shadow-sm btn-outline-secondary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Center Align">
+            <i class="fas fa-align-center"></i>Align center</button>
+                    <button type="button" 
+                            onclick="f5()" 
+                            class="btn shadow-sm btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Right Align">
+            <i class="fas fa-align-right"></i>Align right</button>
+                    <button type="button" 
+                            onclick="f6()" 
+                            class="btn shadow-sm btn-outline-secondary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Uppercase Text">
+            Upper Case</button>
+                    <button type="button" 
+                            onclick="f7()" 
+                            class="btn shadow-sm btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Lowercase Text">
+            Lower Case</button>
+                    <button type="button" 
+                            onclick="f8()" 
+                            class="btn shadow-sm btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Capitalize Text">
+            Capitalize</button> 
+                     <button type="button" 
+                            onclick="f9()" 
+                            class="btn shadow-sm btn-outline-primary side" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Tooltip on top">
+            Clear Text</button> 
+            <!-- <button type="button"class="bf" onclick="save()" value="save"class="btn shadow-sm btn-outline-primary side" 
+            data-toggle="tooltip" 
+            data-placement="top" 
+            title="Tooltip on top">Save</button> -->
+            <button type="button" 
+            onclick="save()" 
+            class="btn shadow-sm btn-outline-primary side" 
+            data-toggle="tooltip" 
+            data-placement="top" 
+            title="Tooltip on top">
+Save</button> 
+
+    
+<input type="file" style="background-color: pink;">
+ 
+            <!-- <button type="button" 
+            onclick="load()" 
+            class="btn shadow-sm btn-outline-primary side" 
+            data-toggle="tooltip" 
+            data-placement="top" 
+            title="Tooltip on top">
+Load</button> 
+            -->
+            
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+            </div>
+            <div class="col-md-6 col-sm-9">
+                <div class="flex-box">
+                   
+                    <textarea name="saisie" id="textarea1" onkeyup="transcrire()"  class="cadr"
+                             
+                              class="input shadow" 
+                              name="name" 
+                              rows="15" 
+                              cols="100" 
+                              placeholder="Your text here ">
+                    </textarea>
+                    <!-- <textarea name="saisie" id="bar" onkeyup="transcrire()"  class="cadr"
+                             
+                              class="input shadow" 
+                              name="name" 
+                              rows="15" 
+                              cols="100" 
+                              placeholder="Your text here ">
+                    </textarea> -->
+                    
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    
+    
+    
+    <script src="scripts/opentext.js"></script>
+</body>
+</html>
+ <!-- <textarea name="saisie" id="bar" onkeyup="transcrire()"  class="cadr"
+                    id="textarea1" 
+                              class="input shadow" 
+                              name="name" 
+                              rows="15" 
+                              cols="500" 
+                              placeholder="Your text here "
+                              style="align-items: center;"></textarea> -->
